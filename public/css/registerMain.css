@@ -1,0 +1,168 @@
+main {
+  background: #eaeaea;
+}
+main .main-content {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+main .box {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 50px 25px 35px;
+  text-align: left;
+  position: relative;
+  font-size: 15px;
+  color: #747482;
+  box-shadow: 0 12px 34px 0 rgba(0, 0, 100, 0.05);
+}
+main .box:before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  background-image: linear-gradient(-216deg, #8c0038, #d63a76);
+  background-size: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+main .box__title {
+  position: relative;
+  font-size: 13px;
+  letter-spacing: 1.62px;
+  left: 35px;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  top: -65px;
+  background: #fff;
+  box-shadow: 0 6px 7px 0 rgba(0, 0, 0, 0.07);
+  font-weight: 600;
+}
+main .box__title span {
+  background-image: linear-gradient(-216deg, #d63a76, #8c0038 50%, #d63a76);
+  background: linear-gradient(-216deg, #d63a76, #8c0038 50%, #d63a76);
+  background-size: 200% 100%;
+  color: #9a0b43;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+main .form-group .label-container label {
+  letter-spacing: 1.5px;
+  color: black;
+  font-size: 0.9rem;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+main .form-group input[type="text"] {
+  width: 100%;
+  height: 53px;
+  outline: none;
+  padding: 0 10px;
+}
+main .form-group input[type="password"] {
+  width: 100%;
+  height: 53px;
+  outline: none;
+  padding: 0 10px;
+}
+main .form-group select {
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  padding: 15px 40px 15px 10px;
+  width: 100%;
+  outline: none;
+}
+main button {
+  background-image: linear-gradient(-216deg, #d63a76, #8c0038 50%, #d63a76);
+  background-size: 200% 100%;
+  border: none;
+  color: #fff;
+  -webkit-text-fill-color: currentcolor;
+  font-family: Work Sans, sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+main button::before {
+  height: 3px;
+  width: 100%;
+  margin: 0;
+  content: "";
+  top: 0;
+  left: -100%;
+  background-image: linear-gradient(-216deg, #d63a76, #8c0038);
+  opacity: 0;
+  display: block;
+  position: absolute;
+}
+main button:hover {
+  background-position: 100%;
+}
+
+.label-solo {
+  letter-spacing: 1.5px;
+  color: black;
+  font-size: 0.9rem;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.field-group .control .label-container label {
+  position: absolute;
+  top: -6px;
+  left: 15px;
+  font-size: 11px;
+  color: #9295a4;
+  letter-spacing: 0.85px;
+  background-color: #fff;
+  padding: 0 7px;
+}
+
+.back {
+  background-image: linear-gradient(-216deg, #d63a76, #8c0038 50%, #d63a76);
+  background-size: 200% 100%;
+  border: none;
+  color: #fff;
+  -webkit-text-fill-color: currentcolor;
+  font-family: Work Sans, sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+.back::before {
+  height: 3px;
+  width: 100%;
+  margin: 0;
+  content: "";
+  top: 0;
+  left: -100%;
+  background-image: linear-gradient(-216deg, #d63a76, #8c0038);
+  opacity: 0;
+  display: block;
+  position: absolute;
+}
+.back:hover {
+  text-decoration: none;
+  color: white;
+  background-position: 100%;
+}
+
+/*# sourceMappingURL=registerMain.css.map */

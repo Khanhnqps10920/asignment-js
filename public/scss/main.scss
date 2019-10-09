@@ -1,0 +1,40 @@
+$font-title: "Big Shoulders Display", cursive;
+$font-text: "Raleway", sans-serif;
+
+@import "header";
+@import "mainContent";
+@import "footer";
+// @import "registerHeader";
+// @import 'registerMain';
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+span,
+a {
+  font-family: $font-text;
+  font-size: 14px;
+}

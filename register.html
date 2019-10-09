@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/registerMain.css" />
+    <link rel="stylesheet" href="public/css/registerHeader.css" />
+    <title>cart</title>
+  </head>
+  <body>
+    <header class="d-flex align-items-center justify-content-center">
+      <div class="header-logo">
+        <img src="images/tomorrow.png" alt="" />
+      </div>
+    </header>
+    <main class="col-xs-12 start-xs p-5">
+      <div class="main-content mb-4 ">
+        <h1>YOUR TOMORROWLAND ACCOUNT</h1>
+        <h3 class="font-weight-bold">Tomorrowland User Account Registration</h3>
+        <p>
+          By creating a Tomorrowland Account, you will stay up-to-date with all
+          Tomorrowland related news. You can change your personal settings at
+          any time once signed in to your account.
+        </p>
+      </div>
+
+      <form action="">
+        <div class="box account-detail">
+          <div class="box__title">
+            <span>ACCOUNT DETAILS</span>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <div class="label-container">
+                  <label for="email">EMAIL ADDRESS</label>
+                </div>
+                <input type="text" name="email" placeholder="Your email" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <div class="label-container">
+                  <label for="password">PASSWORD</label>
+                </div>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="your password"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <div class="label-container">
+                  <label for="confirmPassword">CONFIRM PASSWORD</label>
+                </div>
+                <input
+                  type="password"
+                  name="confirmPassword"
+                  placeholder="confirm your password"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box your-detail">
+          <div class="box__title">
+            <span>YOUR DETAILS</span>
+          </div>
+          <div class="row flex-nowrap">
+            <div class="form-group col-lg-6">
+              <div class="control">
+                <div class="label-container">
+                  <label for="givenName">First Name</label>
+                </div>
+                <input type="text" autocomplete="given-name" name="givenName" />
+              </div>
+            </div>
+            <div class="form-group col-lg-6">
+              <div class="control">
+                <div class="label-container">
+                  <label for="familyName">Last Name</label>
+                </div>
+                <input type="text" autocomplete="last-name" name="familyName" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <label class="ml-3 label-solo" for="">Adress</label>
+            </div>
+          </div>
+          <div class="field-group mt-3">
+            <div class="row">
+              <div class="form-group col-sm-7">
+                <div class="control basicField position-relative">
+                  <div class="label-container">
+                    <label for="street">Street</label>
+                  </div>
+                  <input
+                    type="text"
+                    data-test-id="field-street"
+                    maxlength="40"
+                    name="street"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-sm-2">
+                <div class="control basicField position-relative">
+                  <div class="label-container">
+                    <label for="buildingNumber">N*</label>
+                  </div>
+                  <input
+                    type="text"
+                    data-test-id="field-building"
+                    maxlength="40"
+                    name="buidingNumber"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-sm-3">
+                <div class="control basicField position-relative">
+                  <div class="label-container">
+                    <label for="boxNumber">APT/SUITE</label>
+                  </div>
+                  <input
+                    type="text"
+                    data-test-id="field-box-number"
+                    maxlength="40"
+                    name="boxNumber"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-4">
+                <div class="control basicField position-relative">
+                  <div class="label-container">
+                    <label for="postalCode">POSTAL CODE</label>
+                  </div>
+                  <input
+                    type="text"
+                    data-test-id="field-postal"
+                    maxlength="40"
+                    name="postalCode"
+                  />
+                </div>
+              </div>
+              <div class="form-group col-8">
+                <div class="control basicField position-relative">
+                  <div class="label-container">
+                    <label for="city">City</label>
+                  </div>
+                  <input
+                    type="text"
+                    data-test-id="field-city"
+                    maxlength="40"
+                    name="city"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class=" form-group col-6">
+                <div class="control basicField position-relative">
+                  <div class="label-container">
+                    <label for="country">COUNTRY</label>
+                  </div>
+                  <select
+                    type="select"
+                    data-test-id="field-country"
+                    maxlength="40"
+                    name="country"
+                  >
+                    <option value="UK">UK</option>
+                    <option value="VN">VN</option>
+                    <option value="EU">EU</option>
+                    <option value="AI">AU</option>
+                    <option value="AQ">AQ</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <div class="label-container">
+                    <label for="gender" style="color:black">GENDER</label>
+                  </div>
+                  <div class="radio-group">
+                    <input type="radio" value="male" name="gender" />
+                    <label class="mr-3" for="male">Male</label>
+                    <input type="radio" value="male" name="gender" />
+                    <label class="mr-3" for="female">Female</label>
+                    <input type="radio" value="male" name="gender" />
+                    <label for="other">Other</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <button type="submit" class="mr-2">CREATE ACCOUNT</button>
+          <a class="back" href="index.html">GO BACK</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

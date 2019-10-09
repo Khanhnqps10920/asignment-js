@@ -1,0 +1,15 @@
+header {
+  background-image: url("../../images/bg-large.jpg");
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 44px 0 #b4c1d1;
+
+  .header-logo {
+    width: 233px;
+    img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+  }
+}

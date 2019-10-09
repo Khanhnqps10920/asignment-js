@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="public/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <title>Ecommercer Website</title>
+  </head>
+  <body>
+      <template id="itemTemplate">
+          <div class="position-relative shop-slider__box">
+            <div class=" shop-slider__images">
+              <img id="itemImg" src="images/slick-img-1.webp" alt="">
+            </div>
+            <div class="position-absolute shop-slider__product-detail">
+                <div class="product-badget">
+                  <span>NEW</span>
+                </div>
+                <h3 id="name">SIGNATURE TEE</h3>
+                <h4 id="price">35.00$</h4>
+                <p>More information</p>
+              </div>
+          </div>
+        </template>
+    <header>
+      <div class="navbar position-fixed">
+        <div
+          class="navbar__wrapper d-flex align-items-center justify-content-between"
+        >
+          <div class="navbar__item-left d-flex">
+            <div class="navbar__logo">
+              <h3>KSW</h3>
+            </div>
+            <ul class="categories d-flex align-items-center">
+              <li class="categories__item ">
+                <a href="#">
+                  NEW
+                </a>
+                <ul
+                  class="categories__sub-menu position-absolute justify-content-between align-items-center"
+                >
+                  <li>
+                    <div class="images-wrapper">
+                      <img src="images/images-hover.webp" alt="" />
+                    </div>
+                    <a class="font-weight-bold text-hover" href="#"
+                      >PREMIUM LEATHER JOURNEY COLLECTIONS</a
+                    >
+                  </li>
+                  <li>
+                    <div class="images-wrapper">
+                      <img src="images/images-hover2.webp" alt="" />
+                    </div>
+                    <a class="font-weight-bold text-hover" href="#">JEWERY</a>
+                  </li>
+                  <li>
+                    <div class="images-wrapper">
+                      <img src="images/images-hover-3.webp" alt="" />
+                    </div>
+                    <a class="font-weight-bold text-hover" href="#"
+                      >TML X KOMONO</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="categories__item"><a href="#">MEN</a></li>
+              <li class="categories__item"><a href="#">WOMEN</a></li>
+              <li class="categories__item"><a href="#">KIDS</a></li>
+              <li class="categories__item"><a href="#">ACCESSORIES</a></li>
+            </ul>
+          </div>
+          <div
+            class="navbar__item-right d-flex align-items-center justify-content-end"
+          >
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" />
+            <ul class="position-relative">
+              <li>
+                <h5>EUR <i class="fas fa-chevron-down"></i></h5>
+                <ul class="position-absolute sub-menu">
+                  <li>USD</li>
+                  <li>EUR</li>
+                  <li>CAD</li>
+                  <li>AUD</li>
+                  <li>BRL</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="wish-list">
+              <i class="far fa-heart"></i>
+              <p>Wishlist (0)</p>
+            </div>
+            <div class="cart">
+              <a href="register.html"><i class="fas fa-shopping-cart"></i></<a>
+              <a href="register.html">Cart (0)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="hero">
+        <div class="hero__banner">
+          <div class="hero__content">
+            <div
+              class="container align-items-end d-flex flex-column justify-content-center content-wrapper"
+            >
+              <h3>LIVE TODAY</h3>
+              <h1 class="font-weight-bold">FLOURISH COLLECTION</h1>
+              <p>
+                Experience the freedom of movement and breezy fabric with the
+                Flourish Collection, complete with a unique flower pattern.
+              </p>
+              <a href="#"><span class="font-weight-bold">SHOP NOW</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="information">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div
+                class="information__item justify-content-between align-items-center d-flex"
+              >
+                <div class="images-wrapper">
+                  <img src="images/logo.png" alt="" />
+                </div>
+                <h4 class="font-weight-bold">
+                  OFFICIAL TOMORROWLAND FASHION AND MERCHANDISE
+                </h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+              class="information__item justify-content-between align-items-center d-flex"
+            >
+              <div class="images-wrapper">
+                <img src="images/car.png" alt="" />
+              </div>
+              <h4 class="font-weight-bold">
+
+                FREE SHIPPING ABOVE €100
+
+                LEARN MORE              </h4>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div
+            class="information__item justify-content-end align-items-center d-flex"
+          >
+          <i class="fas fa-undo"></i>
+          <h4 class="font-weight-bold">
+              30 DAY RETURN POLICY AND RETARDS
+          </h4>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 pr-0">
+              <div class="shop__item-left position-relative">
+                <video autoplay loop muted playsinline="playsinline" class="auto-play-video" preload="auto" >
+                  <source src="https://cdn.shopify.com/s/files/1/0921/8620/files/TML19_FASHION_CapsAtStages_WEBSHOP_V2.mp4?64898">
+                </video>
+                <div class="shop__collection">
+                    <a href="#"><span>SHOW CAPS <span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 pl-0">
+              <div class="shop__item-right d-flex flex-column">
+                <div class="shop__images d-flex justify-content-center align-items-center">
+                  <div class="shop__collection">
+                    <a href="#"><span>SHOP ACCESSORIES</span></a>
+                  </div>
+                </div>
+                <div style="background:url('images/right-images2.webp')" class="shop__images d-flex justify-content-center align-items-center">
+                  <div class="shop__collection">
+                    <a href="#"><span>SHOP SUNGLASSES</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recommended text-center p-5 font-weight-bold">  
+        <h1>RECOMMENDED FOR THE PEOPLE OF TOMORROW</h1>
+        <p>Inspired by the most iconic Tomorrowland Elements, every product is crafted and designed from scratch with selected fabrics and only the best materials</p>
+      </section>
+      <section class="shop-slider">
+       
+      </section>
+      <section class="constrict mt-3">
+        <div class="container">
+          <div class="constrict__grid-container">
+            <div class="constrict__item">
+              <div class="constrict__gender">
+                <a href="#"><span>SHOP MEN</span></a>
+              </div>
+            </div>
+            <div class="constrict__item">
+              <div class="constrict__gender">
+                <a href="#"><span>SHOP WOMEN</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="instagram position-relative">
+        <div class="position-absolute inst">
+          <h2>FOLLOW US</h2>
+          <p><i class="fab fa-instagram"></i>TMLbyTomorrowland</p>
+        </div>
+        <div class="container">
+          <div class="instagram__content">
+            <div class="instagram__item position-relative"><img src="images/insta1.jpg" alt="">
+              <h1 class="position-absolute">WE BLIEVE WE ARE PARET OF THE GENERATION OF TOMORROW.</h1>
+            </div>
+            <div class="instagram__item position-relative"><img src="images/insta2.jpg" alt=""></div>
+          </div>
+        </div>
+      </section>
+      <section class="travel">
+        <div class="container">
+          <div class="travel__content d-flex flex-column justify-content-center">
+            <h3>PREMIUM LEATHER JOURNEY COLLECTION </h3>
+            <h1>TRAVEL IN STYLE</h1>
+            <p>The Premium Leather Journey Collection features a 
+                    waist bag, backpack and weekender travel bag that 
+                    are ideal for your daily commute, holiday
+                    hand luggage or short trips to 
+                    the beach or countryside.</p>
+            <a href="#"><span>DISCOVER NOW</span></a> 
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-5 pb-5 footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer__logo d-flex align-items-center">
+              <div class="ksw mr-3">
+                <a href="#">
+                KSW
+                </a>
+              </div>
+              <div class="tomorrow">
+                <img src="images/logo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer__care ">
+              <h5 class="font-weight-bold">CUSTOMER CARE</h5>
+              <ul>
+                <li class="position-relative">CONTACT & SUPPORT</li>
+                <li class="position-relative">SIZE GUIDE</li>
+                <li class="position-relative">PAYMENTS</li>
+                <li class="position-relative">SHIPPING AND DELIVERY</li>
+                <li class="position-relative">WARRANTY & REFUNDS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+              <div class="footer__care ">
+                  <h5 class="font-weight-bold">KSW BY TOMORROWLAND</h5>
+                  <ul>
+                    <li class="position-relative">TOMORROWLAND</li>
+                    <li class="position-relative">ACCOUNT</li>
+                    <li class="position-relative">OFFICAL</li>
+                    <li class="position-relative">BOUTIQUES</li>
+                    <li class="position-relative">SEARCH</li>
+                  </ul>
+                </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer__form position-relative pr-1">
+              <div class="form">
+                <h3 class="font-weight-bold">SIGN UP FOR THE TML BY TOMORROWLAND NEWSLETTER</h3>
+                <p class="font-weight-bold mt-3 mb-3">
+                    I would like to receive the TML by Tomorrowland newsletter containing commercial offers, exclusive discounts and new product releases.
+                </p>
+                <input type="text" placeholder="Email address">
+                <button class="mt-4" >SUBCRIBE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+    src="https://kit.fontawesome.com/4e3c8206ba.js"
+    crossorigin="anonymous"
+  ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+
+  </body>
+</html>
