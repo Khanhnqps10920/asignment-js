@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Raleway&display=swap"
       rel="stylesheet"
     />
+ 
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,6 +17,8 @@
     />
     <link rel="stylesheet" href="public/css/registerMain.css" />
     <link rel="stylesheet" href="public/css/registerHeader.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
     <title>cart</title>
   </head>
   <body>
@@ -35,7 +38,7 @@
         </p>
       </div>
 
-      <form action="">
+      <form name="register">
         <div class="box account-detail">
           <div class="box__title">
             <span>ACCOUNT DETAILS</span>
@@ -46,7 +49,14 @@
                 <div class="label-container">
                   <label for="email">EMAIL ADDRESS</label>
                 </div>
-                <input type="text" name="email" placeholder="Your email" />
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                  onfocusout="validationEmail()"
+                />
+                <span class="helper-text"></span>
               </div>
             </div>
           </div>
@@ -54,13 +64,16 @@
             <div class="col-12">
               <div class="form-group">
                 <div class="label-container">
-                  <label for="password">PASSWORD</label>
+                  <label for="password">MẬT KHẨU</label>
                 </div>
                 <input
                   type="password"
                   name="password"
                   placeholder="your password"
+                  required
+                  onfocusout="validationPassword()"
                 />
+                <span class="helper-text"></span>
               </div>
             </div>
           </div>
@@ -68,13 +81,16 @@
             <div class="col-12">
               <div class="form-group">
                 <div class="label-container">
-                  <label for="confirmPassword">CONFIRM PASSWORD</label>
+                  <label for="confirmPassword">XÁC NHẬN MẬT KHẨU</label>
                 </div>
                 <input
                   type="password"
                   name="confirmPassword"
                   placeholder="confirm your password"
+                  required
+                  onfocusout="validationConfirmPassword()"
                 />
+                <span class="helper-text"></span>
               </div>
             </div>
           </div>
@@ -87,23 +103,35 @@
             <div class="form-group col-lg-6">
               <div class="control">
                 <div class="label-container">
-                  <label for="givenName">First Name</label>
+                  <label for="givenName">Họ</label>
                 </div>
-                <input type="text" autocomplete="given-name" name="givenName" />
+                <input
+                  type="text"
+                  onfocusout="validationFirstName()"
+                  autocomplete="given-name"
+                  name="givenName"
+                />
+                <span class="helper-text"></span>
               </div>
             </div>
             <div class="form-group col-lg-6">
               <div class="control">
                 <div class="label-container">
-                  <label for="familyName">Last Name</label>
+                  <label for="familyName">Tên và tên lót</label>
                 </div>
-                <input type="text" autocomplete="last-name" name="familyName" />
+                <input
+                  type="text"
+                  onfocusout="validationLastName()"
+                  autocomplete="last-name"
+                  name="familyName"
+                />
+                <span class="helper-text"></span>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <label class="ml-3 label-solo" for="">Adress</label>
+              <label class="ml-3 label-solo" for="">Địa chỉ</label>
             </div>
           </div>
           <div class="field-group mt-3">
@@ -111,27 +139,31 @@
               <div class="form-group col-sm-7">
                 <div class="control basicField position-relative">
                   <div class="label-container">
-                    <label for="street">Street</label>
+                    <label for="street">Đường</label>
                   </div>
                   <input
                     type="text"
                     data-test-id="field-street"
                     maxlength="40"
+                    onfocusout="validationStreet()"
                     name="street"
                   />
+                  <span class="helper-text"></span>
                 </div>
               </div>
               <div class="form-group col-sm-2">
                 <div class="control basicField position-relative">
                   <div class="label-container">
-                    <label for="buildingNumber">N*</label>
+                    <label for="buildingNumber">Số nhà</label>
                   </div>
                   <input
                     type="text"
                     data-test-id="field-building"
                     maxlength="40"
-                    name="buidingNumber"
+                    onfocusout="validationBuilding()"
+                    name="buildingNumber"
                   />
+                  <span class="helper-text"></span>
                 </div>
               </div>
               <div class="form-group col-sm-3">
@@ -143,8 +175,10 @@
                     type="text"
                     data-test-id="field-box-number"
                     maxlength="40"
+                    onfocusout="validationAPT()"
                     name="boxNumber"
                   />
+                  <span class="helper-text"></span>
                 </div>
               </div>
             </div>
@@ -159,20 +193,24 @@
                     data-test-id="field-postal"
                     maxlength="40"
                     name="postalCode"
+                    onfocusout="validationPostalCode()"
                   />
+                  <span class="helper-text"></span>
                 </div>
               </div>
               <div class="form-group col-8">
                 <div class="control basicField position-relative">
                   <div class="label-container">
-                    <label for="city">City</label>
+                    <label for="city">Thành phố</label>
                   </div>
                   <input
                     type="text"
                     data-test-id="field-city"
                     maxlength="40"
                     name="city"
+                    onfocusout="validationCity()"
                   />
+                  <span class="helper-text"></span>
                 </div>
               </div>
             </div>
@@ -180,20 +218,23 @@
               <div class=" form-group col-6">
                 <div class="control basicField position-relative">
                   <div class="label-container">
-                    <label for="country">COUNTRY</label>
+                    <label for="country">Quốc Gia</label>
                   </div>
                   <select
+                    class="browser-default"
                     type="select"
                     data-test-id="field-country"
                     maxlength="40"
                     name="country"
                   >
+                    <option value="empty">Choose an option</optio>
                     <option value="UK">UK</option>
-                    <option value="VN">VN</option>
+                    <option value="VN">VN</option>  
                     <option value="EU">EU</option>
                     <option value="AI">AU</option>
                     <option value="AQ">AQ</option>
                   </select>
+                  <span id="test2"></span>
                 </div>
               </div>
             </div>
@@ -204,12 +245,19 @@
                     <label for="gender" style="color:black">GENDER</label>
                   </div>
                   <div class="radio-group">
-                    <input type="radio" value="male" name="gender" />
-                    <label class="mr-3" for="male">Male</label>
-                    <input type="radio" value="male" name="gender" />
-                    <label class="mr-3" for="female">Female</label>
-                    <input type="radio" value="male" name="gender" />
-                    <label for="other">Other</label>
+                    <label>
+                      <input class="with-gap" name="gender" type="radio" />
+                      <span>Men</span>
+                    </label>
+                    <label>
+                      <input class="with-gap" name="gender" type="radio" />
+                      <span>Women</span>
+                    </label>
+                    <label>
+                      <input class="with-gap" name="gender" type="radio" />
+                      <span>Other</span>
+                    </label>
+                    <span id="test"></span>
                   </div>
                 </div>
               </div>
@@ -222,5 +270,9 @@
         </div>
       </form>
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="js/validation.js"></script>
   </body>
 </html>

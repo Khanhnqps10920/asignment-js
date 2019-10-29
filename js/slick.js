@@ -4,7 +4,7 @@ $(document).ready(function() {
     centerMode: true,
     centerPadding: '120px',
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     arrows: false
   });
 });
@@ -60,6 +60,11 @@ const renderSliderItem = item => {
   const nameElement = itemElement.querySelector('#name');
   const priceElement = itemElement.querySelector('#price');
   const imagesElement = itemElement.querySelector('#itemImg');
+  const product = itemElement.querySelector('.shop-slider__box');
+  product.addEventListener('click', () => {
+    const detailUrl = '/detail.html';
+    window.location = detailUrl;
+  });
   nameElement.textContent = item.name;
   priceElement.textContent = item.price;
   imagesElement.src = item.url;
