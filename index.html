@@ -101,12 +101,12 @@
               </li>
             </ul>
             <div class="wish-list">
-              <i class="far fa-heart"></i>
-              <p>Wishlist (0)</p>
+              <a href="register.html"><i class="far fa-heart"></i></<a>
+              <a href="register.html"><p>Wishlist (0)</p></<a>
             </div>
             <div class="cart">
-              <a href="register.html"><i class="fas fa-shopping-cart"></i></<a>
-              <a href="register.html">Cart (0)</a>
+              <a href="cart.html"><i class="fas fa-shopping-cart"></i></<a>
+              <a href="cart.html" >Cart <span id="cartNumber">(0)</span></a>
             </div>
           </div>
         </div>
@@ -215,6 +215,80 @@
           </div>
         </div>
       </section>
+      <section class="store pt-5 pb-5">
+        <div class="container">
+          <h1 class="store-title text-center">
+            STORE
+          </h1>
+          <hr>
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img id="itemImg" src="images/slick-img-2.jpg" alt="">
+                <h3 id="itemName" class="position-absolute">Some Name</h3>
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img src="images/slick-img-3.jpg" id="itemImg" alt="">
+                <h3 id="itemName" class="position-absolute">Some Test</h3>
+
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img src="images/slick-img-4.jpg" id="itemImg" alt="">
+                <h3 id="itemName" class="position-absolute">T-shirt</h3>
+
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img src="images/slick-img-5.jpg" id="itemImg" alt="">
+                <h3 id="itemName" class="position-absolute">Some Text</h3>
+
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img id="itemImg" src="images/slick-img-6.jpg" alt="">
+                <h3 id="itemName" class="position-absolute">Check</h3>
+
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img src="images/slick-img-7.jpg" id="itemImg" alt="">
+                <h3 id="itemName" class="position-absolute">Test</h3>
+
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img id="itemImg" src="images/slick-img-8.jpg" alt="">
+                <h3 id="itemName" class="position-absolute">Hats</h3>
+
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 mb-2">
+              <div class="store-item position-relative">
+                <img id="itemImg" src="images/slick-img-9.jpg" alt="">
+                <h3 id="itemName" class="position-absolute">News</h3>
+
+                <button class="add-to-cart-btn position-absolute">Add To Cart</button>
+              </div>
+            </div>
+       
+          </div>
+        </div>
+      </section>
       <section class="instagram position-relative">
         <div class="position-absolute inst">
           <h2>FOLLOW US</h2>
@@ -306,5 +380,6 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

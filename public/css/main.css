@@ -761,3 +761,36 @@ a {
 /*# sourceMappingURL=main.css.map */
 
 /* modal */
+
+/* store item */
+
+.store-item {
+  overflow: hidden;
+}
+
+.store-item > #itemName {
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #bf9217;
+}
+
+.store-item > img {
+  width: 100%;
+  transition: 0.4s ease;
+}
+
+.store-item > img:hover {
+  transform: scale(1.1);
+}
+
+.store-item > .add-to-cart-btn {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: black;
+  color: white;
+  padding: 10px 0;
+}
